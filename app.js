@@ -25,7 +25,6 @@ function loadTasks() {
 function addTask(event) {
   event.preventDefault();
   const task = taskInput.value.trim();
-
   if (task) {
     addTaskToList(task);
     const tasks = getTasksFromLocalStorage();
